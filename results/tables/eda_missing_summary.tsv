@@ -1,0 +1,27 @@
+variable	missing_n	missing_pct
+geo_accession	0	0
+sample_id	0	0
+source	0	0
+age_years	0	0
+er_status_ihc	1	0.00340136054421769
+pr_status_ihc	1	0.00340136054421769
+her2_status	11	0.0374149659863946
+erbb2_status	0	0
+er_status_ihc_esr1_for indeterminate	0	0
+clinical_t_stage	0	0
+clinical_nodal_status	0	0
+clinical_ajcc_stage	0	0
+grade	7	0.0238095238095238
+pathologic_response_pcr_rd	0	0
+pathologic_response_rcb_class	5	0.0170068027210884
+drfs_1_event_0_censored	0	0
+drfs_even_time_years	0	0
+pam50_class	0	0
+set_class	0	0
+chemosensitivity_prediction	0	0
+dlda30_prediction	0	0
+rcb_0_i_prediction	0	0
+response_primary	0	0
+response_rcb	5	0.0170068027210884
+response_rcb_binary	5	0.0170068027210884
+response_binary	0	0

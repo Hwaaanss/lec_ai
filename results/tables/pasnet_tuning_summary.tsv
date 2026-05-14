@@ -1,0 +1,2 @@
+model	feature_set	auroc_mean	baseline_best_auroc	target_auroc	note
+pasnet	gene_pathway	0.7530603911454975	0.7783000214915108	0.7583000214915108	PASNet did not reach the baseline AUROC target after the fixed non-leaky tuning grid.

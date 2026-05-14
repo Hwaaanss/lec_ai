@@ -1,0 +1,9 @@
+variable	test	p_value
+er_status_ihc_esr1_for indeterminate	chisq	1.78998744436167e-09
+grade	chisq_simulated	9.99900009999e-05
+pam50_class	chisq_simulated	9.99900009999e-05
+age_years	wilcox	0.100845334669204
+clinical_t_stage	chisq_simulated	0.297270272972703
+clinical_nodal_status	chisq	0.679859181141253
+clinical_ajcc_stage	chisq_simulated	0.696630336966303
+source	chisq	0.925032332491729
