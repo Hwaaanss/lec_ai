@@ -1,0 +1,74 @@
+paths:
+  series_matrix: data/raw/GSE25066_series_matrix.txt.gz
+  raw_tar: data/raw/GSE25066_RAW.tar
+  interim_dir: data/interim
+  processed_dir: data/processed
+  results_dir: results
+  plots_dir: results/plots
+  tables_dir: results/tables
+  models_dir: results/models
+  summaries_dir: results/summaries
+  immune_signatures_tsv: config/immune_signatures.tsv
+
+cohort:
+  her2_filter_field: erbb2_status
+  her2_negative_value: "N"
+  primary_endpoint_field: pathologic_response_pcr_rd
+  primary_positive_label: pCR
+  primary_negative_label: RD
+  secondary_endpoint_field: pathologic_response_rcb_class
+  secondary_positive_labels:
+    - RCB-0/I
+  secondary_negative_labels:
+    - RCB-II
+    - RCB-III
+
+features:
+  clinical_fields:
+    - age_years
+    - grade
+    - clinical_t_stage
+    - clinical_nodal_status
+    - clinical_ajcc_stage
+    - er_status_ihc_esr1_for indeterminate
+  metadata_keep_fields:
+    - geo_accession
+    - sample_id
+    - source
+    - age_years
+    - er_status_ihc
+    - pr_status_ihc
+    - her2_status
+    - erbb2_status
+    - er_status_ihc_esr1_for indeterminate
+    - clinical_t_stage
+    - clinical_nodal_status
+    - clinical_ajcc_stage
+    - grade
+    - pathologic_response_pcr_rd
+    - pathologic_response_rcb_class
+    - drfs_1_event_0_censored
+    - drfs_even_time_years
+    - pam50_class
+    - set_class
+    - chemosensitivity_prediction
+    - dlda30_prediction
+    - rcb_0_i_prediction
+  top_variable_genes_heatmap: 50
+  de_logfc_threshold: 0.5
+  de_adj_p_threshold: 0.05
+  min_genes_per_set: 5
+
+modeling:
+  outer_folds: 5
+  outer_repeats: 3
+  inner_folds: 4
+  inner_repeats: 3
+  random_state: 42
+  response_column: response_binary
+  source_column: source
+
+plotting:
+  width: 10
+  height: 7
+  dpi: 300

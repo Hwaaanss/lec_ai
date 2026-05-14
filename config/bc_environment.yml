@@ -1,0 +1,19 @@
+name: bc
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - pandas
+  - numpy
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - pyyaml
+  - shap
+  - xgboost
+  - umap-learn
+  - pip:
+      - torch
